@@ -42,8 +42,8 @@ class American extends Person {
     ethnicity = 'American';
 
     function1() {
-        a = super.male();
-        b = super.female();
+        super.male();
+        super.female();
     }
 
 
