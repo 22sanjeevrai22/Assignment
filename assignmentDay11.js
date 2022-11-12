@@ -94,15 +94,15 @@ class Korean extends Person {
 }
 
 
-const person1 = new American('big', 'white', 'square', 'white', 'tall', '11cm');
-const person2 = new Korean('small', 'yellow', 'round', 'white', 'short', '5cm');
+const americanPerson = new American('big', 'white', 'square', 'white', 'tall', '11cm');
+const koreanPerson = new Korean('small', 'yellow', 'round', 'white', 'short', '5cm');
 
 
-console.log(person1.callOutput());
-console.log(person2.callOutput());
+// console.log(person1.callOutput());
+// console.log(person2.callOutput());
 
-console.log(person1.male(23, 34));
-console.log(person1.female(12, 56));
+console.log(americanPerson.male(23, 34));
+console.log(americanPerson.female(12, 56));
 
-console.log(person2.male(99, 94));
-console.log(person2.female(2, 5));
+console.log(koreanPerson.male(99, 94));
+console.log(koreanPerson.female(2, 5));
