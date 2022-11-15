@@ -1,36 +1,97 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
+
 
 function App() {
-    const [counter, setCounter] = useState(0);
-
-    const increaseNum = () => {
-        setCounter((prevValue) => {
-            return prevValue + 1;
-        })
-    }
-
-    const decreaseNum = () => {
-        setCounter((prevValue) => {
-            return prevValue - 1;
-        })
-    }
-
-    return ( <
-        >
+    return ( 
+        
         <
-        h1 > { counter } < /h1>   <
-        button onClick = { increaseNum } > Increase < /button>  <
-        button onClick = { decreaseNum } > Decrease < /button>
+        div className = 'container' >
+        <h2>Feedback Form</h2>
+        <
+        form >
+        <
+        p >
+        <
+        label >
+        First Name:
+        <
+        input type = "text"
+        name = "firstname" / >
+        <
+        /label> <br></br >
+        <
+        label >
+        Middle Name:
+        <
+        input type = "text"
+        name = "middlename" / >
+        <
+        /label><br></br >
+        <
+        label >
+        Last Name:
+        <
+        input type = "text"
+        name = "lastname" / >
+        <
+        /label><br></br >
+        <
+        label >
+        Gender:
+        <
+        select >
+        <
+        option selected value = "male" > Male < /option> <
+        option value = "female" > Female < /option> < /
+        select > <
+        /label><br></br >
+        <
+        label >
+        Email:
+        <
+        input type = "text"
+        name = "email" / >
+        <
+        /label><br></br >
+        <
+        label >
+        Date of Birth:
+        <
+        input type = "date"
+        name = "dob" / >
+        <
+        /label><br></br >
+        <
+        label >
+        Phone No.:
+        <
+        input type = "number"
+        name = "phone" / >
+        <
+        /label><br></br >
+        
+        <label htmlFor=""><input type="checkbox" />I have a car
+    </label><br></br>
+    <label htmlFor=""><input type="checkbox" />I have a bike
+    </label><br></br>
+    <label htmlFor=""><input type="checkbox" />I have a bicycle
+    </label><br></br>
 
+        
+
+
+       <
+        input type = "submit"
+        value = "Submit" / >
+        
+        <
+        /p> < /
+        form >
 
         <
-        />
-    )
+        /div>
+    );
 }
-
-
-
 
 export default App;
